@@ -8,6 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "50%": { opacity: "0.5" },
+          "100%": { opacity: "1" },
+        },
+        fadeOut: {
+          "0%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+          "100%": { opacity: "0" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 600ms ease-out",
+        fadeOut: "fadeOut 600ms ease-in",
+      },
       colors: {
         // Base colors
         primary: "#2F80ED",
@@ -44,7 +60,6 @@ const config: Config = {
           septenary: "#F9E0FD",
         },
       },
-      backgroundImage: {},
     },
   },
   plugins: [],
