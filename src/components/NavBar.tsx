@@ -6,7 +6,8 @@ const Navbar = () => {
       <nav className="bg-tertiary dark:bg-tertiary">
         <div className="flex flex-wrap items-center justify-between mx-auto p-2">
           <div
-            className="items-center justify-between hidden w-full h-6 md:flex md:w-auto md:order-1"
+            style={{ height: "58px" }}
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-search"
           >
             <button
@@ -22,7 +23,6 @@ const Navbar = () => {
                 style={{ width: "auto", height: "auto" }}
                 width={24}
                 height={24}
-                className="w-1/2"
               />
               <span className="sr-only">Search</span>
             </button>
